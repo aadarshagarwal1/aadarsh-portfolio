@@ -14,7 +14,6 @@ const skillCategories = [
       { name: "TypeScript", icon: "devicon-typescript-plain colored" },
       { name: "Java",       icon: "devicon-java-plain colored" },
       { name: "Python",     icon: "devicon-python-plain colored" },
-      { name: "C++",        icon: "devicon-cplusplus-plain colored" },
     ],
   },
   {
@@ -32,10 +31,12 @@ const skillCategories = [
     id: "backend",
     label: "Backend",
     skills: [
-      { name: "Spring Boot", icon: "devicon-spring-plain colored" },
       { name: "Node.js",     icon: "devicon-nodejs-plain colored" },
       { name: "Express.js",  icon: "devicon-express-original" },
-      { name: "Hibernate",   icon: "devicon-hibernate-plain colored" },
+      { name: "Spring Boot", icon: "devicon-spring-plain colored" },
+      { name: "Prisma",      icon: "devicon-prisma-plain colored" },
+      { name: "WebSocket",   icon: "devicon-socketio-original colored" },
+      { name: "SSE",         icon: "devicon-fastapi-plain colored" },
     ],
   },
   {
@@ -52,11 +53,21 @@ const skillCategories = [
     id: "cloud",
     label: "Cloud & Tools",
     skills: [
-      { name: "GCP",      icon: "devicon-googlecloud-plain colored" },
-      { name: "Firebase", icon: "devicon-firebase-plain colored" },
-      { name: "Git",      icon: "devicon-git-plain colored" },
-      { name: "Vercel",   icon: "devicon-vercel-plain" },
-      { name: "Docker",   icon: "devicon-docker-plain colored" },
+      { name: "GCP",        icon: "devicon-googlecloud-plain colored" },
+      { name: "Firebase",   icon: "devicon-firebase-plain colored" },
+      { name: "Git",        icon: "devicon-git-plain colored" },
+      { name: "Vercel",     icon: "devicon-vercel-plain" },
+      { name: "Vite",       icon: "devicon-vitejs-plain colored" },
+      { name: "Cloudinary", icon: "devicon-cloudinary-plain colored" },
+      { name: "Razorpay",   icon: "devicon-razorpay-plain colored" },
+    ],
+  },
+  {
+    id: "ai",
+    label: "AI & APIs",
+    skills: [
+      { name: "OpenAI API", icon: "devicon-openai-plain colored" },
+      { name: "Gemini API", icon: "devicon-gemini-plain colored" },
     ],
   },
 ];
@@ -209,7 +220,7 @@ export default function Home() {
           </div>
 
           <div className="hero-right-bottom">
-            <div className="hero-count">03</div>
+            <div className="hero-count">04</div>
           </div>
         </div>
       </section>
@@ -233,15 +244,15 @@ export default function Home() {
         </div>
         <div className="stat-cell">
           <div className="stat-val">1K+</div>
-          <div className="stat-lbl">Play Store Users</div>
+          <div className="stat-lbl">1000+ Users</div>
         </div>
         <div className="stat-cell">
           <div className="stat-val">138%</div>
           <div className="stat-lbl">Engagement Lift</div>
         </div>
         <div className="stat-cell">
-          <div className="stat-val">2</div>
-          <div className="stat-lbl">Active Internships</div>
+          <div className="stat-val">3</div>
+          <div className="stat-lbl">Total Internships</div>
         </div>
         <div className="stat-cell">
           <div className="stat-val">8.18</div>
@@ -277,12 +288,65 @@ export default function Home() {
         <div className="exp-entry observe">
           <div className="exp-entry-top">
             <div>
+              <div className="exp-co">Mentorque</div>
+              <div className="exp-role-line">Full Stack Developer Intern</div>
+            </div>
+            <div className="exp-meta-right">
+              <div className="exp-date">April 2025 — Present</div>
+              <span className="exp-badge live">Active</span>
+            </div>
+          </div>
+          <div className="exp-quote">
+            &quot;Built AI-powered resume optimization pipeline with 89% setup time reduction&quot;
+          </div>
+          <ul className="exp-bullets">
+            <li>
+              Built GPT-4.1-powered resume optimization pipeline — JD analyzer, bullet enhancer,
+              skills ranking, and one-page compression using OpenAI and Gemini APIs
+            </li>
+            <li>
+              Developed Chrome extension backend to auto-annotate applied jobs and streamline
+              application tracking workflows
+            </li>
+            <li>
+              Engineered onboarding wizard using React 18, Vite, and Prisma — reduced setup time
+              from 6 hours to 20 minutes (89% improvement)
+            </li>
+            <li>
+              Migrated product to scalable Node.js and Express.js architecture, enabling fully
+              self-serve onboarding for new users
+            </li>
+          </ul>
+          <div className="exp-metrics">
+            <div>
+              <div className="metric-v">89%</div>
+              <div className="metric-l">Setup time reduced</div>
+            </div>
+            <div>
+              <div className="metric-v">GPT-4.1</div>
+              <div className="metric-l">AI-powered pipeline</div>
+            </div>
+            <div>
+              <div className="metric-v">Self-serve</div>
+              <div className="metric-l">Onboarding enabled</div>
+            </div>
+          </div>
+          <div className="exp-stack">
+            {["Node.js","Express.js","React 18","Vite","Prisma","OpenAI API","Gemini API","PostgreSQL"].map(
+              (s) => <span key={s} className="stack-pill">{s}</span>
+            )}
+          </div>
+        </div>
+
+        <div className="exp-entry observe">
+          <div className="exp-entry-top">
+            <div>
               <div className="exp-co">CricsHub</div>
               <div className="exp-role-line">SDE Intern</div>
             </div>
             <div className="exp-meta-right">
-              <div className="exp-date">January 2026 — Present</div>
-              <span className="exp-badge live">Active</span>
+              <div className="exp-date">January 2025 — April 2025</div>
+              <span className="exp-badge past">Completed</span>
             </div>
           </div>
           <div className="exp-quote">
@@ -546,7 +610,7 @@ export default function Home() {
           {[
             { place: "2nd Place", name: "Nexus 3.0 Web Development Competition", info: "500+ registrations" },
             { place: "3rd Place", name: "Spider 3.0 Web Development Competition", info: "300+ participants" },
-            { place: "Top 20",   name: "Hackatron 36-Hour Hackathon",            info: "1000+ participants" },
+            { place: "Top 2%",   name: "Hackatron 36-Hour Hackathon",            info: "1000+ participants" },
           ].map((c) => (
             <div key={c.name} className="comp-row observe">
               <div className="comp-place">{c.place}</div>
