@@ -292,7 +292,7 @@ export default function Home() {
               <div className="exp-role-line">Full Stack Developer Intern</div>
             </div>
             <div className="exp-meta-right">
-              <div className="exp-date">April 2025 — Present</div>
+              <div className="exp-date">April 2026 — Present</div>
               <span className="exp-badge live">Active</span>
             </div>
           </div>
@@ -345,7 +345,7 @@ export default function Home() {
               <div className="exp-role-line">SDE Intern</div>
             </div>
             <div className="exp-meta-right">
-              <div className="exp-date">January 2025 — April 2025</div>
+              <div className="exp-date">January 2026 — April 2026</div>
               <span className="exp-badge past">Completed</span>
             </div>
           </div>
@@ -401,7 +401,7 @@ export default function Home() {
               <div className="exp-role-line">Full Stack Developer Intern</div>
             </div>
             <div className="exp-meta-right">
-              <div className="exp-date">November 2024 — February 2025</div>
+              <div className="exp-date">November 2025 — February 2026</div>
               <span className="exp-badge past">Completed</span>
             </div>
           </div>
