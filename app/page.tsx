@@ -3,7 +3,8 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 
-const TAGLINE = "I build full-stack products that ship to real users.";
+const TAGLINE =
+  "Full-stack developer in React, Node.js, and Spring Boot — building scalable SaaS, sports-tech, and ed-tech platforms for 1000+ users.";
 
 const skillCategories = [
   {
@@ -25,6 +26,8 @@ const skillCategories = [
       { name: "React Native", icon: "devicon-react-original colored" },
       { name: "Redux",        icon: "devicon-redux-original colored" },
       { name: "Tailwind CSS", icon: "devicon-tailwindcss-plain colored" },
+      { name: "Material-UI",  icon: "devicon-materialui-plain colored" },
+      { name: "Shadcn UI",    icon: "devicon-react-original colored" },
     ],
   },
   {
@@ -41,25 +44,32 @@ const skillCategories = [
   },
   {
     id: "database",
-    label: "Database",
+    label: "Database & Messaging",
     skills: [
       { name: "PostgreSQL", icon: "devicon-postgresql-plain colored" },
       { name: "MongoDB",    icon: "devicon-mongodb-plain colored" },
       { name: "Redis",      icon: "devicon-redis-plain colored" },
       { name: "Firestore",  icon: "devicon-firebase-plain colored" },
+      { name: "Kafka",      icon: "devicon-apachekafka-original colored" },
+      { name: "GCP Pub/Sub", icon: "devicon-googlecloud-plain colored" },
     ],
   },
   {
     id: "cloud",
-    label: "Cloud & Tools",
+    label: "Cloud & DevOps",
     skills: [
-      { name: "GCP",        icon: "devicon-googlecloud-plain colored" },
-      { name: "Firebase",   icon: "devicon-firebase-plain colored" },
-      { name: "Git",        icon: "devicon-git-plain colored" },
-      { name: "Vercel",     icon: "devicon-vercel-plain" },
-      { name: "Vite",       icon: "devicon-vitejs-plain colored" },
-      { name: "Cloudinary", icon: "devicon-cloudinary-plain colored" },
-      { name: "Razorpay",   icon: "devicon-razorpay-plain colored" },
+      { name: "GCP",            icon: "devicon-googlecloud-plain colored" },
+      { name: "AWS S3",         icon: "devicon-amazonwebservices-plain-wordmark colored" },
+      { name: "Firebase",       icon: "devicon-firebase-plain colored" },
+      { name: "Docker",         icon: "devicon-docker-plain colored" },
+      { name: "GitHub Actions", icon: "devicon-github-original" },
+      { name: "Nginx",          icon: "devicon-nginx-original" },
+      { name: "Linux",          icon: "devicon-linux-plain colored" },
+      { name: "Git",            icon: "devicon-git-plain colored" },
+      { name: "Vercel",         icon: "devicon-vercel-plain" },
+      { name: "Vite",           icon: "devicon-vitejs-plain colored" },
+      { name: "Cloudinary",     icon: "devicon-cloudinary-plain colored" },
+      { name: "Razorpay",       icon: "devicon-razorpay-plain colored" },
     ],
   },
   {
@@ -195,7 +205,7 @@ export default function Home() {
               <span className="hero-meta-sep">·</span>
               <span>B.Tech EE, BIT Sindri</span>
               <span className="hero-meta-sep">·</span>
-              <span>India · 2027</span>
+              <span>Dhanbad, Jharkhand · 2027</span>
             </div>
             <div className="hero-tagline">
               {typed}
@@ -247,8 +257,8 @@ export default function Home() {
           <div className="stat-lbl">1000+ Users</div>
         </div>
         <div className="stat-cell">
-          <div className="stat-val">138%</div>
-          <div className="stat-lbl">Engagement Lift</div>
+          <div className="stat-val">80%</div>
+          <div className="stat-lbl">Time-to-Value Drop</div>
         </div>
         <div className="stat-cell">
           <div className="stat-val">3</div>
@@ -272,7 +282,7 @@ export default function Home() {
           <div className="edu-institution">B.I.T. Sindri</div>
           <div className="edu-degree">B.Tech, Electrical Engineering</div>
           <div className="edu-meta">
-            <span>Aug 2023 – 2027</span>
+            <span>Aug 2023 – Present · Dhanbad, Jharkhand</span>
             <span className="edu-cgpa">8.18 / 10 CGPA</span>
           </div>
         </div>
@@ -297,38 +307,49 @@ export default function Home() {
             </div>
           </div>
           <div className="exp-quote">
-            &quot;Built AI-powered resume optimization pipeline with 89% setup time reduction&quot;
+            &quot;Streamlined onboarding and AI-powered resume workflows for self-serve growth&quot;
           </div>
           <ul className="exp-bullets">
+            <li>
+              Implemented a streamlined frontend onboarding experience using React 18 and Vite
+              to eliminate setup friction, decreasing average time-to-value for new users by 80%
+            </li>
+            <li>
+              Architected automated client workflows utilizing Node.js and Express.js to transition
+              the product into a fully self-serve platform, onboarding 100+ new clients in the
+              first month and eliminating operations dependencies
+            </li>
+            <li>
+              Developed an automated resume parsing pipeline integrating OpenAI and Gemini APIs
+              for precise keyword extraction — processing resumes in under 3 seconds with dynamic
+              skill ranking and targeted formatting
+            </li>
+            <li>
+              Built a custom backend architecture for a Chrome extension to automate job application
+              tracking and data annotation, successfully logging 4,000+ applications to streamline
+              the candidate workflow
+            </li>
             <li>
               Built GPT-4.1-powered resume optimization pipeline — JD analyzer, bullet enhancer,
               skills ranking, and one-page compression using OpenAI and Gemini APIs
             </li>
             <li>
-              Developed Chrome extension backend to auto-annotate applied jobs and streamline
-              application tracking workflows
-            </li>
-            <li>
               Engineered onboarding wizard using React 18, Vite, and Prisma — reduced setup time
-              from 6 hours to 20 minutes (89% improvement)
-            </li>
-            <li>
-              Migrated product to scalable Node.js and Express.js architecture, enabling fully
-              self-serve onboarding for new users
+              from 6 hours to 20 minutes
             </li>
           </ul>
           <div className="exp-metrics">
             <div>
-              <div className="metric-v">89%</div>
-              <div className="metric-l">Setup time reduced</div>
+              <div className="metric-v">80%</div>
+              <div className="metric-l">Time-to-value reduced</div>
             </div>
             <div>
-              <div className="metric-v">GPT-4.1</div>
-              <div className="metric-l">AI-powered pipeline</div>
+              <div className="metric-v">100+</div>
+              <div className="metric-l">Clients onboarded</div>
             </div>
             <div>
-              <div className="metric-v">Self-serve</div>
-              <div className="metric-l">Onboarding enabled</div>
+              <div className="metric-v">4K+</div>
+              <div className="metric-l">Applications tracked</div>
             </div>
           </div>
           <div className="exp-stack">
@@ -342,7 +363,7 @@ export default function Home() {
           <div className="exp-entry-top">
             <div>
               <div className="exp-co">CricsHub</div>
-              <div className="exp-role-line">SDE Intern</div>
+              <div className="exp-role-line">Software Development Engineer Intern</div>
             </div>
             <div className="exp-meta-right">
               <div className="exp-date">January 2026 — April 2026</div>
@@ -354,33 +375,42 @@ export default function Home() {
           </div>
           <ul className="exp-bullets">
             <li>
-              Shipped a Dream11-style fantasy cricket platform — 100-credit team
-              builder, Captain/VC selection, real-time leaderboards, and automated
-              points engine — serving 1000+ users on Google Play Store
+              Engineered a fantasy cricket module integrated into a live-scoring and tournament
+              management application (1,000+ Play Store downloads) using React Native and Spring
+              Boot, featuring real-time leaderboards that supported 300+ concurrent participants
             </li>
             <li>
-              Developed a B2C SaaS streaming tool for club-level cricket broadcasters
-              with OBS overlays via WebSocket/STOMP, SSE score delivery, premium
-              overlay bundles (Glass, Material, Aero), and Razorpay-powered add-ons
+              Shipped a Dream11-style fantasy cricket platform — 100-credit team builder,
+              Captain/VC selection, real-time leaderboards, and automated points engine
             </li>
             <li>
-              Deployed full stack on GCP (Spring Boot microservices, PostgreSQL,
-              Redis), Vercel for web, and published the React Native app to Google
-              Play Store
+              Developed an end-to-end live streaming service utilizing WebSocket and SSE to
+              synchronize in-app match data with real-time video overlays, alongside Razorpay
+              integration for premium features and monetization workflows
             </li>
             <li>
-              Implemented multi-operator stream lock system, Firebase Auth with Google
-              OAuth2, and JWT authorization across both platforms
+              Developed a B2C SaaS streaming tool for club-level cricket broadcasters with OBS
+              overlays via WebSocket/STOMP, SSE score delivery, premium overlay bundles (Glass,
+              Material, Aero), and Razorpay-powered add-ons
+            </li>
+            <li>
+              Deployed the monolithic application on Google Cloud Platform backed by PostgreSQL
+              and Redis, securing the platform with Firebase Auth, OAuth2, and JWT for robust
+              access control
+            </li>
+            <li>
+              Published the React Native app to Google Play Store and deployed web frontend on
+              Vercel; implemented multi-operator stream lock system across both platforms
             </li>
           </ul>
           <div className="exp-metrics">
             <div>
               <div className="metric-v">1K+</div>
-              <div className="metric-l">Play Store users</div>
+              <div className="metric-l">Play Store downloads</div>
             </div>
             <div>
               <div className="metric-v">300+</div>
-              <div className="metric-l">Streams managed</div>
+              <div className="metric-l">Concurrent participants</div>
             </div>
             <div>
               <div className="metric-v">500+</div>
@@ -410,25 +440,41 @@ export default function Home() {
           </div>
           <ul className="exp-bullets">
             <li>
-              Built StoryQuest end-to-end — a competitive blogging platform with
-              submission pipelines, community voting, and winner announcement workflows
+              Launched the StoryQuest competition feature to enhance a core blogging platform
+              using React and Firestore, facilitating time-bound writing contests with
+              parameter-based winner evaluation, which drove a 62% increase in user submissions
             </li>
             <li>
-              Migrated ~100 frontend modules from JavaScript to TypeScript, eliminating
-              a class of runtime errors and establishing codebase standards
+              Built StoryQuest end-to-end — submission pipelines, community voting, and winner
+              announcement workflows
             </li>
             <li>
-              Integrated product analytics for user behavior tracking across the platform
+              Integrated product analytics to monitor user workflows, track competition engagement
+              trends, and measure platform retention metrics, driving a 20% increase in new user
+              acquisition and a 16% boost in returning users
+            </li>
+            <li>
+              Migrated ~100 frontend modules from JavaScript to TypeScript, eliminating a class
+              of runtime errors and establishing codebase standards
+            </li>
+            <li>
+              Established end-to-end and integration testing across the entire platform workflow
+              to ensure system reliability and maintain overall frontend stability during
+              continuous deployment cycles
             </li>
           </ul>
           <div className="exp-metrics">
             <div>
               <div className="metric-v">62%</div>
-              <div className="metric-l">More stories posted</div>
+              <div className="metric-l">More submissions</div>
             </div>
             <div>
-              <div className="metric-v">138%</div>
-              <div className="metric-l">Engagement increase</div>
+              <div className="metric-v">20%</div>
+              <div className="metric-l">New user acquisition</div>
+            </div>
+            <div>
+              <div className="metric-v">16%</div>
+              <div className="metric-l">Returning users</div>
             </div>
             <div>
               <div className="metric-v">~100</div>
@@ -465,11 +511,15 @@ export default function Home() {
               <div className="project-tag">Deployed · Private Org</div>
               <div className="project-name">AttendX</div>
               <div className="project-desc">
-                Geolocation-based attendance system built as a cross-platform React
-                Native app. Uses Expo Location API and Haversine formula for precise
-                geofencing. Role-based interfaces for teachers and students.
+                Geolocation-based attendance platform utilizing React Native and Node.js,
+                replacing manual roll calls with a streamlined workflow that enables teachers
+                to start and save attendance in under a minute with fewer than 5 clicks.
+                Enforces precise spatial validation via the Haversine formula within a strict
+                20-meter radius. Passwordless OTP authentication, JWT-secured API routes, and
+                Firebase Cloud Messaging for real-time session alerts. Role-based interfaces
+                for teachers and students.
               </div>
-              <div className="project-hl">→ Express.js · PostgreSQL · Redis · JWT · Render</div>
+              <div className="project-hl">→ Express.js · PostgreSQL · Prisma · Firebase · FCM · JWT · Redis · Render</div>
             </div>
           </div>
 
@@ -608,7 +658,7 @@ export default function Home() {
 
         <div className="comp-list">
           {[
-            { place: "2nd Place", name: "Nexus 3.0 Web Development Competition", info: "500+ registrations" },
+            { place: "2nd Place", name: "Nexus 3.0 Web Development Competition", info: "500+ participants" },
             { place: "3rd Place", name: "Spider 3.0 Web Development Competition", info: "300+ participants" },
             { place: "Top 2%",   name: "Hackatron 36-Hour Hackathon",            info: "1000+ participants" },
           ].map((c) => (
@@ -635,6 +685,12 @@ export default function Home() {
           and real impact matter.
         </p>
         <div className="contact-links observe">
+          <a href="tel:+916206590790" className="contact-link">
+            <svg viewBox="0 0 24 24">
+              <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.56.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.56 1 1 0 01-.25 1.01l-2.2 2.22z" />
+            </svg>
+            +91 62065 90790
+          </a>
           <a href="mailto:aadarshsaroon001@gmail.com" className="contact-link">
             <svg viewBox="0 0 24 24">
               <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
