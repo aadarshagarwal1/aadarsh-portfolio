@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 
 const TAGLINE =
-  "Full-stack developer in React, Node.js, and Spring Boot — building scalable SaaS, sports-tech, and ed-tech platforms for 1000+ users.";
+  "Full-stack developer in React, Node.js, and Spring Boot — building scalable SaaS, sports-tech, and ed-tech platforms.";
 
 const skillCategories = [
   {

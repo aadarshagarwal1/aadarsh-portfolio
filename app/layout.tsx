@@ -25,7 +25,7 @@ const instrumentSerif = Instrument_Serif({
 export const metadata: Metadata = {
   title: "Aadarsh Agarwal — Full Stack Developer",
   description:
-    "Full-stack developer experienced in React, Node.js, and Spring Boot, building scalable SaaS, sports-tech, and ed-tech platforms serving 1000+ users.",
+    "Full-stack developer experienced in React, Node.js, and Spring Boot, building scalable SaaS, sports-tech, and ed-tech platforms.",
 };
 
 export default function RootLayout({
